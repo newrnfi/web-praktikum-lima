@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kurs mata uang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Kalkulator Kurs Mata Uang</h1>
+    <div class="kal">
+        <h2>Masukan nilai</h2>
+        <input placeholder="Masukan Nilai" type="text" name="nilai" id="nilai">
+        <br><br>
+        <select onchange="ganti()" id="value">
+            <option value="0">Ubah Kurs</option>
+            <option value="u">Dollar US</option>
+            <option value="s">Dollar Singapore</option>
+            <option value="m">Ringgit Malaysia</option>
+            <option value="j">Yen Jepang</option>
+            <option value="e">Euro</option>
+            <option value="a">Riyal Arab Saudi</option>
+        </select>
+        <br><br>
+        <input type="text" disabled="" id="rupiah" placeholder="Nilai Rupiah">
+        
+    </div>
+</body>
+<script>
+function ganti() {
+
+    let e = eval(document.getElementById("nilai").value);
+    let f = document.getElementById("value").value;
+
+    if (f == 'u') {
+        nilai = document.getElementById("nilai").value;
+        asli = 9915;
+        jumlah = asli * nilai;
+        document.getElementById("rupiah").value = 'Rp.'+jumlah;
+    }
+    else if (f == 's') {
+        nilai = document.getElementById("nilai").value;
+        asli = 13472;
+        jumlah = asli * nilai;
+        document.getElementById("rupiah").value = 'Rp.'+jumlah;
+    }
+    else if (f == 'm') {
+        nilai = document.getElementById("nilai").value;
+        asli = 874;
+        jumlah = asli * nilai;
+        document.getElementById("rupiah").value = 'Rp.'+jumlah;
+    }
+    else if (f == 'j') {
+        nilai = document.getElementById("nilai").value;
+        asli = 120;
+        jumlah = asli * nilai;
+        document.getElementById("rupiah").value = 'Rp.'+jumlah;
+    }
+    else if (f == 'e') {
+        nilai = document.getElementById("nilai").value;
+        asli = 15888;
+        jumlah = asli * nilai;
+        document.getElementById("rupiah").value = 'Rp.'+jumlah;
+    }
+    else if (f == 'a') {
+        nilai = document.getElementById("nilai").value;
+        asli = 3592;
+        jumlah = asli * nilai;
+        document.getElementById("rupiah").value = 'Rp.'+jumlah;
+    }
+}
+</script>
+</html>

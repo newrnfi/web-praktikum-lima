@@ -1,0 +1,78 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: blueviolet;
+}
+.judul {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 480px;
+    height: 420px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+#pesan-area {
+   
+    height: 60%;
+    padding: 3px;
+    overflow: auto;
+}
+#input {
+    width: 80%;
+    height: 90%;
+    resize: none;
+    padding: 3px;
+}
+
+.ketikan {
+    margin-top: 4px;
+    padding: 4px;
+    height: 8%;
+}
+
+
+.kirim {
+    border: 1;
+    width: 18%;
+    background: rgb(0 127 255);
+    color: white;
+    padding: 2px;
+    position: absolute;
+    margin: 2px;
+}
+
+#nilai {
+    width: 435px;
+    height: 40px;
+}
+.kal {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 480px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+}
+#kurs {
+    width: 250px;
+    height: 30px;
+}
+#rupiah {
+    width: 435px;
+    height: 40px;
+}

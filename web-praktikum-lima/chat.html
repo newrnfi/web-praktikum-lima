@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="judul">
+        <h1>Aplikasi chat</h1>
+        <hr/>
+        <fieldset>
+            <div id="pesan-area">
+
+            </div>
+        </fieldset>
+        <div class="ketikan">
+            <form method="REQUEST" onsubmit="return send();">
+                <input id="input" type="text" name="input">
+                <button class="kirim" type="submit" onclick="return send();">Kirim</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+<script>
+function send(){
+    let pesan = document.getElementById("input").value;
+    document.getElementById("pesan-area").innerHTML += pesan + "<br/>" ;
+    document.getElementById("input").value="";
+    return false;
+}
+</script>
+</html>
